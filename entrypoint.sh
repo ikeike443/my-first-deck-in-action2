@@ -11,8 +11,8 @@ main (){
     fi
 
     for file in $(ls ${dir}); do
-        echo "Executing: deck $cmd $ops -s $file"
-        deck $cmd $ops -s $file
+        echo "Executing: deck $cmd $ops -s $dir/$file"
+        deck $cmd $ops -s $dir/$file
     done
 }
 
