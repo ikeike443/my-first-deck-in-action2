@@ -1,16 +1,16 @@
-"name: 'decK action'
+name: 'decK action'
 description: 'Declarative Configuration management for Kong'
 inputs:
   command:
-    description: 'decK command you want to execute'
+    description: 'A decK command you want to execute'
     required: true
     default: 'ping'
   kong_workspaces:
-    description: 'Kong workspaces where yaml should be located'
+    description: 'Kong workspaces where yaml files are located'
     required: true
     default: 'kong'
   options:
-    description: 'option arguments'
+    description: 'Option parameters for a decK command'
     required: false
 runs:
   using: 'docker'
