@@ -30,4 +30,4 @@ jobs:
       with:
         command: "sync"
         options: "--kong-addr ${{ secrets.KONG_ADDR }} --headers ${{ secrets.KONG_HEADERS }}" 
-        kong_workspaces: "test/kong"
+        kong_workspaces: "kong"
