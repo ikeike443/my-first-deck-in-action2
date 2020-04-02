@@ -24,7 +24,7 @@ jobs:
         command: "validate"
         options: "--kong-addr ${{ secrets.KONG_ADDR }} --headers ${{ secrets.KONG_HEADERS }}" 
         kong_workspaces: "kong"
-   - name: decK sync
+    - name: decK sync
       id: decK_sync
       uses: ./
       with:
